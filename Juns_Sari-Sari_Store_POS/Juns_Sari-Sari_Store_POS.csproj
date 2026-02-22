@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Loginpage.cs">
+    <Compile Include="Forms\Loginpage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Loginpage.Designer.cs">
+    <Compile Include="Forms\Loginpage.Designer.cs">
       <DependentUpon>Loginpage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -60,8 +60,11 @@
     <Compile Include="Forms\Work Station.Designer.cs">
       <DependentUpon>Work Station.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Loginpage.resx">
+    <EmbeddedResource Include="Forms\Loginpage.resx">
       <DependentUpon>Loginpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Work Station.resx">
+      <DependentUpon>Work Station.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,7 +90,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\grocery-store.png" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\grocery-store.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\login.ico" />
   </ItemGroup>
   <ItemGroup />
