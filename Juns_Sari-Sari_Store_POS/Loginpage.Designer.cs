@@ -1,6 +1,8 @@
-﻿namespace Juns_Sari_Sari_Store_POS
+﻿using System.Windows.Forms;
+
+namespace Juns_Sari_Sari_Store_POS
 {
-    partial class Form1
+    partial class Loginpage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loginpage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelWelcome = new System.Windows.Forms.Label();
@@ -143,7 +145,7 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // Form1
+            // Loginpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -157,9 +159,9 @@
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Loginpage";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Loginpage_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -180,4 +182,3 @@
         private System.Windows.Forms.Button btnLogin;
     }
 }
-

@@ -46,16 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Loginpage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Loginpage.Designer.cs">
+      <DependentUpon>Loginpage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\Work Station.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Work Station.Designer.cs">
+      <DependentUpon>Work Station.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Loginpage.resx">
+      <DependentUpon>Loginpage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,5 +90,6 @@
     <Content Include="Images\grocery-store.png" />
     <Content Include="Images\login.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

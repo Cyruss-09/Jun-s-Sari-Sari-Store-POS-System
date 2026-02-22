@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Juns_Sari_Sari_Store_POS
 {
-    public partial class Form1 : Form
+    public partial class Loginpage : Form
     {
 
         [DllImport("gdi32.dll", SetLastError = true)]
@@ -28,7 +28,7 @@ namespace Juns_Sari_Sari_Store_POS
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool DeleteObject(IntPtr hObject);
 
-        public Form1()
+        public Loginpage()
         {
             InitializeComponent();
         }
@@ -40,10 +40,10 @@ namespace Juns_Sari_Sari_Store_POS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Loginpage_Load(object sender, EventArgs e)
         {
             btnLogin.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnLogin.Width, btnLogin.Height, 30, 30));
         }
