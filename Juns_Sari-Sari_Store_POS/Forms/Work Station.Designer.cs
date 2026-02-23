@@ -29,70 +29,188 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Work_Station));
-            this.btnStock = new System.Windows.Forms.Button();
-            this.btnPayments = new System.Windows.Forms.Button();
-            this.btnInvoice = new System.Windows.Forms.Button();
-            this.btnCustomers = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelSales = new System.Windows.Forms.Panel();
+            this.labelCurrencySales_Count = new System.Windows.Forms.Label();
+            this.labelSales_Count = new System.Windows.Forms.Label();
+            this.panelSalesCredit = new System.Windows.Forms.Panel();
+            this.labelCurrencyTotal_Sales_Credit = new System.Windows.Forms.Label();
+            this.labelTotal_Sales_Credit = new System.Windows.Forms.Label();
+            this.panelSalesCash = new System.Windows.Forms.Panel();
+            this.labelCurrencyTotal_Sales_Cash = new System.Windows.Forms.Label();
+            this.labelTotal_Sales_Cash = new System.Windows.Forms.Label();
+            this.panelTotalSales = new System.Windows.Forms.Panel();
+            this.labelCurrencyTotal_Sales = new System.Windows.Forms.Label();
+            this.labelTotal_Sales = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnBusiness = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btnCustomers = new System.Windows.Forms.Button();
+            this.btnInvoice = new System.Windows.Forms.Button();
+            this.btnPayments = new System.Windows.Forms.Button();
+            this.btnStock = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.panelSales.SuspendLayout();
+            this.panelSalesCredit.SuspendLayout();
+            this.panelSalesCash.SuspendLayout();
+            this.panelTotalSales.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnStock
+            // panel1
             // 
-            resources.ApplyResources(this.btnStock, "btnStock");
-            this.btnStock.BackColor = System.Drawing.Color.DimGray;
-            this.btnStock.ForeColor = System.Drawing.Color.White;
-            this.btnStock.Name = "btnStock";
-            this.btnStock.UseVisualStyleBackColor = false;
-            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.panelSales);
+            this.panel1.Controls.Add(this.panelSalesCredit);
+            this.panel1.Controls.Add(this.panelSalesCash);
+            this.panel1.Controls.Add(this.panelTotalSales);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // btnPayments
+            // panelSales
             // 
-            resources.ApplyResources(this.btnPayments, "btnPayments");
-            this.btnPayments.BackColor = System.Drawing.Color.DimGray;
-            this.btnPayments.ForeColor = System.Drawing.Color.White;
-            this.btnPayments.Name = "btnPayments";
-            this.btnPayments.UseVisualStyleBackColor = false;
+            this.panelSales.BackColor = System.Drawing.Color.White;
+            this.panelSales.Controls.Add(this.labelCurrencySales_Count);
+            this.panelSales.Controls.Add(this.labelSales_Count);
+            resources.ApplyResources(this.panelSales, "panelSales");
+            this.panelSales.Name = "panelSales";
             // 
-            // btnInvoice
+            // labelCurrencySales_Count
             // 
-            resources.ApplyResources(this.btnInvoice, "btnInvoice");
-            this.btnInvoice.BackColor = System.Drawing.Color.DimGray;
-            this.btnInvoice.ForeColor = System.Drawing.Color.White;
-            this.btnInvoice.Name = "btnInvoice";
-            this.btnInvoice.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.labelCurrencySales_Count, "labelCurrencySales_Count");
+            this.labelCurrencySales_Count.Name = "labelCurrencySales_Count";
             // 
-            // btnCustomers
+            // labelSales_Count
             // 
-            resources.ApplyResources(this.btnCustomers, "btnCustomers");
-            this.btnCustomers.BackColor = System.Drawing.Color.DimGray;
-            this.btnCustomers.ForeColor = System.Drawing.Color.White;
-            this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.labelSales_Count, "labelSales_Count");
+            this.labelSales_Count.Name = "labelSales_Count";
+            // 
+            // panelSalesCredit
+            // 
+            this.panelSalesCredit.BackColor = System.Drawing.Color.White;
+            this.panelSalesCredit.Controls.Add(this.labelCurrencyTotal_Sales_Credit);
+            this.panelSalesCredit.Controls.Add(this.labelTotal_Sales_Credit);
+            resources.ApplyResources(this.panelSalesCredit, "panelSalesCredit");
+            this.panelSalesCredit.Name = "panelSalesCredit";
+            // 
+            // labelCurrencyTotal_Sales_Credit
+            // 
+            resources.ApplyResources(this.labelCurrencyTotal_Sales_Credit, "labelCurrencyTotal_Sales_Credit");
+            this.labelCurrencyTotal_Sales_Credit.Name = "labelCurrencyTotal_Sales_Credit";
+            // 
+            // labelTotal_Sales_Credit
+            // 
+            resources.ApplyResources(this.labelTotal_Sales_Credit, "labelTotal_Sales_Credit");
+            this.labelTotal_Sales_Credit.Name = "labelTotal_Sales_Credit";
+            // 
+            // panelSalesCash
+            // 
+            this.panelSalesCash.BackColor = System.Drawing.Color.White;
+            this.panelSalesCash.Controls.Add(this.labelCurrencyTotal_Sales_Cash);
+            this.panelSalesCash.Controls.Add(this.labelTotal_Sales_Cash);
+            resources.ApplyResources(this.panelSalesCash, "panelSalesCash");
+            this.panelSalesCash.Name = "panelSalesCash";
+            // 
+            // labelCurrencyTotal_Sales_Cash
+            // 
+            resources.ApplyResources(this.labelCurrencyTotal_Sales_Cash, "labelCurrencyTotal_Sales_Cash");
+            this.labelCurrencyTotal_Sales_Cash.Name = "labelCurrencyTotal_Sales_Cash";
+            // 
+            // labelTotal_Sales_Cash
+            // 
+            resources.ApplyResources(this.labelTotal_Sales_Cash, "labelTotal_Sales_Cash");
+            this.labelTotal_Sales_Cash.Name = "labelTotal_Sales_Cash";
+            // 
+            // panelTotalSales
+            // 
+            this.panelTotalSales.BackColor = System.Drawing.Color.White;
+            this.panelTotalSales.Controls.Add(this.labelCurrencyTotal_Sales);
+            this.panelTotalSales.Controls.Add(this.labelTotal_Sales);
+            resources.ApplyResources(this.panelTotalSales, "panelTotalSales");
+            this.panelTotalSales.Name = "panelTotalSales";
+            // 
+            // labelCurrencyTotal_Sales
+            // 
+            resources.ApplyResources(this.labelCurrencyTotal_Sales, "labelCurrencyTotal_Sales");
+            this.labelCurrencyTotal_Sales.Name = "labelCurrencyTotal_Sales";
+            // 
+            // labelTotal_Sales
+            // 
+            resources.ApplyResources(this.labelTotal_Sales, "labelTotal_Sales");
+            this.labelTotal_Sales.Name = "labelTotal_Sales";
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__3_1;
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__2_1;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // btnBusiness
             // 
             resources.ApplyResources(this.btnBusiness, "btnBusiness");
-            this.btnBusiness.BackColor = System.Drawing.Color.DimGray;
+            this.btnBusiness.BackColor = System.Drawing.Color.Silver;
             this.btnBusiness.ForeColor = System.Drawing.Color.White;
+            this.btnBusiness.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__1_1;
             this.btnBusiness.Name = "btnBusiness";
             this.btnBusiness.UseVisualStyleBackColor = false;
             // 
-            // btnExit
+            // btnCustomers
             // 
-            this.btnExit.BackColor = System.Drawing.Color.Red;
-            resources.ApplyResources(this.btnExit, "btnExit");
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Name = "btnExit";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            resources.ApplyResources(this.btnCustomers, "btnCustomers");
+            this.btnCustomers.BackColor = System.Drawing.Color.Silver;
+            this.btnCustomers.ForeColor = System.Drawing.Color.White;
+            this.btnCustomers.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__4_;
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.UseVisualStyleBackColor = false;
+            // 
+            // btnInvoice
+            // 
+            resources.ApplyResources(this.btnInvoice, "btnInvoice");
+            this.btnInvoice.BackColor = System.Drawing.Color.Silver;
+            this.btnInvoice.ForeColor = System.Drawing.Color.White;
+            this.btnInvoice.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__3_;
+            this.btnInvoice.Name = "btnInvoice";
+            this.btnInvoice.UseVisualStyleBackColor = false;
+            // 
+            // btnPayments
+            // 
+            resources.ApplyResources(this.btnPayments, "btnPayments");
+            this.btnPayments.BackColor = System.Drawing.Color.Silver;
+            this.btnPayments.ForeColor = System.Drawing.Color.White;
+            this.btnPayments.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__2_;
+            this.btnPayments.Name = "btnPayments";
+            this.btnPayments.UseVisualStyleBackColor = false;
+            // 
+            // btnStock
+            // 
+            resources.ApplyResources(this.btnStock, "btnStock");
+            this.btnStock.BackColor = System.Drawing.Color.Silver;
+            this.btnStock.ForeColor = System.Drawing.Color.White;
+            this.btnStock.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__1_;
+            this.btnStock.Name = "btnStock";
+            this.btnStock.UseVisualStyleBackColor = false;
+            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
             // Work_Station
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnBusiness);
             this.Controls.Add(this.btnCustomers);
             this.Controls.Add(this.btnInvoice);
@@ -100,7 +218,13 @@
             this.Controls.Add(this.btnStock);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Work_Station";
+            this.Opacity = 0.5D;
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.panel1.ResumeLayout(false);
+            this.panelSales.ResumeLayout(false);
+            this.panelSalesCredit.ResumeLayout(false);
+            this.panelSalesCash.ResumeLayout(false);
+            this.panelTotalSales.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -112,6 +236,20 @@
         private System.Windows.Forms.Button btnInvoice;
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Button btnBusiness;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelTotalSales;
+        private System.Windows.Forms.Label labelTotal_Sales;
+        private System.Windows.Forms.Label labelCurrencyTotal_Sales;
+        private System.Windows.Forms.Panel panelSalesCredit;
+        private System.Windows.Forms.Label labelCurrencyTotal_Sales_Credit;
+        private System.Windows.Forms.Label labelTotal_Sales_Credit;
+        private System.Windows.Forms.Panel panelSalesCash;
+        private System.Windows.Forms.Label labelCurrencyTotal_Sales_Cash;
+        private System.Windows.Forms.Label labelTotal_Sales_Cash;
+        private System.Windows.Forms.Panel panelSales;
+        private System.Windows.Forms.Label labelCurrencySales_Count;
+        private System.Windows.Forms.Label labelSales_Count;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

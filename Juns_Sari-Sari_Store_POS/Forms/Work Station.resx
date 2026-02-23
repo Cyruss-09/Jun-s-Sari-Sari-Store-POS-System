@@ -117,128 +117,488 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnStock.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
+  <metadata name="panel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="panelSales.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnStock.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semilight, 10pt, style=Bold</value>
+  <data name="labelCurrencySales_Count.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16pt</value>
   </data>
-  <data name="btnStock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 33</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelCurrencySales_Count.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="btnStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 153</value>
+  <data name="labelCurrencySales_Count.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 71</value>
+  </data>
+  <data name="labelCurrencySales_Count.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 45</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnStock.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnStock.Text" xml:space="preserve">
-    <value>Stock</value>
-  </data>
-  <data name="&gt;&gt;btnStock.Name" xml:space="preserve">
-    <value>btnStock</value>
-  </data>
-  <data name="&gt;&gt;btnStock.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnStock.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnStock.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btnPayments.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btnPayments.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semilight, 10pt, style=Bold</value>
-  </data>
-  <data name="btnPayments.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 33</value>
-  </data>
-  <data name="btnPayments.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 153</value>
-  </data>
-  <data name="btnPayments.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelCurrencySales_Count.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnPayments.Text" xml:space="preserve">
-    <value>Payments</value>
+  <data name="labelCurrencySales_Count.Text" xml:space="preserve">
+    <value>₱0.00</value>
   </data>
-  <data name="&gt;&gt;btnPayments.Name" xml:space="preserve">
-    <value>btnPayments</value>
+  <data name="labelCurrencySales_Count.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;btnPayments.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;labelCurrencySales_Count.Name" xml:space="preserve">
+    <value>labelCurrencySales_Count</value>
   </data>
-  <data name="&gt;&gt;btnPayments.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;labelCurrencySales_Count.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnPayments.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;labelCurrencySales_Count.Parent" xml:space="preserve">
+    <value>panelSales</value>
   </data>
-  <data name="btnInvoice.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="&gt;&gt;labelCurrencySales_Count.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="btnInvoice.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semilight, 10pt, style=Bold</value>
+  <data name="labelSales_Count.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
-  <data name="btnInvoice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 225</value>
+  <data name="labelSales_Count.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="btnInvoice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 153</value>
+  <data name="labelSales_Count.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 14</value>
   </data>
-  <data name="btnInvoice.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelSales_Count.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 30</value>
+  </data>
+  <data name="labelSales_Count.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelSales_Count.Text" xml:space="preserve">
+    <value>Sales Count:  (Today)</value>
+  </data>
+  <data name="labelSales_Count.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelSales_Count.Name" xml:space="preserve">
+    <value>labelSales_Count</value>
+  </data>
+  <data name="&gt;&gt;labelSales_Count.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSales_Count.Parent" xml:space="preserve">
+    <value>panelSales</value>
+  </data>
+  <data name="&gt;&gt;labelSales_Count.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelSales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 26</value>
+  </data>
+  <data name="panelSales.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 10</value>
+  </data>
+  <data name="panelSales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 141</value>
+  </data>
+  <data name="panelSales.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panelSales.Name" xml:space="preserve">
+    <value>panelSales</value>
+  </data>
+  <data name="&gt;&gt;panelSales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelSales.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panelSales.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="panelSalesCredit.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="labelCurrencyTotal_Sales_Credit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16pt</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales_Credit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales_Credit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 71</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales_Credit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 45</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales_Credit.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales_Credit.Text" xml:space="preserve">
+    <value>₱0.00</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales_Credit.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelCurrencyTotal_Sales_Credit.Name" xml:space="preserve">
+    <value>labelCurrencyTotal_Sales_Credit</value>
+  </data>
+  <data name="&gt;&gt;labelCurrencyTotal_Sales_Credit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCurrencyTotal_Sales_Credit.Parent" xml:space="preserve">
+    <value>panelSalesCredit</value>
+  </data>
+  <data name="&gt;&gt;labelCurrencyTotal_Sales_Credit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelTotal_Sales_Credit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13pt</value>
+  </data>
+  <data name="labelTotal_Sales_Credit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTotal_Sales_Credit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 14</value>
+  </data>
+  <data name="labelTotal_Sales_Credit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 30</value>
+  </data>
+  <data name="labelTotal_Sales_Credit.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelTotal_Sales_Credit.Text" xml:space="preserve">
+    <value>Total Sales:  (Credit)</value>
+  </data>
+  <data name="labelTotal_Sales_Credit.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelTotal_Sales_Credit.Name" xml:space="preserve">
+    <value>labelTotal_Sales_Credit</value>
+  </data>
+  <data name="&gt;&gt;labelTotal_Sales_Credit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTotal_Sales_Credit.Parent" xml:space="preserve">
+    <value>panelSalesCredit</value>
+  </data>
+  <data name="&gt;&gt;labelTotal_Sales_Credit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelSalesCredit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 545</value>
+  </data>
+  <data name="panelSalesCredit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 10</value>
+  </data>
+  <data name="panelSalesCredit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 141</value>
+  </data>
+  <data name="panelSalesCredit.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panelSalesCredit.Name" xml:space="preserve">
+    <value>panelSalesCredit</value>
+  </data>
+  <data name="&gt;&gt;panelSalesCredit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelSalesCredit.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panelSalesCredit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="panelSalesCash.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="labelCurrencyTotal_Sales_Cash.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16pt</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales_Cash.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales_Cash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 71</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales_Cash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 45</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales_Cash.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales_Cash.Text" xml:space="preserve">
+    <value>₱0.00</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales_Cash.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelCurrencyTotal_Sales_Cash.Name" xml:space="preserve">
+    <value>labelCurrencyTotal_Sales_Cash</value>
+  </data>
+  <data name="&gt;&gt;labelCurrencyTotal_Sales_Cash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCurrencyTotal_Sales_Cash.Parent" xml:space="preserve">
+    <value>panelSalesCash</value>
+  </data>
+  <data name="&gt;&gt;labelCurrencyTotal_Sales_Cash.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelTotal_Sales_Cash.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13pt</value>
+  </data>
+  <data name="labelTotal_Sales_Cash.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTotal_Sales_Cash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 14</value>
+  </data>
+  <data name="labelTotal_Sales_Cash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 30</value>
+  </data>
+  <data name="labelTotal_Sales_Cash.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelTotal_Sales_Cash.Text" xml:space="preserve">
+    <value>Total Sales:  (Cash)</value>
+  </data>
+  <data name="labelTotal_Sales_Cash.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelTotal_Sales_Cash.Name" xml:space="preserve">
+    <value>labelTotal_Sales_Cash</value>
+  </data>
+  <data name="&gt;&gt;labelTotal_Sales_Cash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTotal_Sales_Cash.Parent" xml:space="preserve">
+    <value>panelSalesCash</value>
+  </data>
+  <data name="&gt;&gt;labelTotal_Sales_Cash.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelSalesCash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 372</value>
+  </data>
+  <data name="panelSalesCash.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 10</value>
+  </data>
+  <data name="panelSalesCash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 141</value>
+  </data>
+  <data name="panelSalesCash.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panelSalesCash.Name" xml:space="preserve">
+    <value>panelSalesCash</value>
+  </data>
+  <data name="&gt;&gt;panelSalesCash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelSalesCash.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panelSalesCash.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btnInvoice.Text" xml:space="preserve">
-    <value>Invoice</value>
+  <metadata name="panelTotalSales.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="labelCurrencyTotal_Sales.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16pt</value>
   </data>
-  <data name="&gt;&gt;btnInvoice.Name" xml:space="preserve">
-    <value>btnInvoice</value>
+  <data name="labelCurrencyTotal_Sales.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;btnInvoice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelCurrencyTotal_Sales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 71</value>
   </data>
-  <data name="&gt;&gt;btnInvoice.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="labelCurrencyTotal_Sales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 45</value>
   </data>
-  <data name="&gt;&gt;btnInvoice.ZOrder" xml:space="preserve">
+  <data name="labelCurrencyTotal_Sales.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales.Text" xml:space="preserve">
+    <value>₱0.00</value>
+  </data>
+  <data name="labelCurrencyTotal_Sales.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelCurrencyTotal_Sales.Name" xml:space="preserve">
+    <value>labelCurrencyTotal_Sales</value>
+  </data>
+  <data name="&gt;&gt;labelCurrencyTotal_Sales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCurrencyTotal_Sales.Parent" xml:space="preserve">
+    <value>panelTotalSales</value>
+  </data>
+  <data name="&gt;&gt;labelCurrencyTotal_Sales.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelTotal_Sales.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13pt</value>
+  </data>
+  <data name="labelTotal_Sales.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTotal_Sales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 14</value>
+  </data>
+  <data name="labelTotal_Sales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 30</value>
+  </data>
+  <data name="labelTotal_Sales.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelTotal_Sales.Text" xml:space="preserve">
+    <value>Total Sales:  (Today)</value>
+  </data>
+  <data name="labelTotal_Sales.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelTotal_Sales.Name" xml:space="preserve">
+    <value>labelTotal_Sales</value>
+  </data>
+  <data name="&gt;&gt;labelTotal_Sales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTotal_Sales.Parent" xml:space="preserve">
+    <value>panelTotalSales</value>
+  </data>
+  <data name="&gt;&gt;labelTotal_Sales.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelTotalSales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 199</value>
+  </data>
+  <data name="panelTotalSales.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 10</value>
+  </data>
+  <data name="panelTotalSales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 141</value>
+  </data>
+  <data name="panelTotalSales.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panelTotalSales.Name" xml:space="preserve">
+    <value>panelTotalSales</value>
+  </data>
+  <data name="&gt;&gt;panelTotalSales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelTotalSales.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panelTotalSales.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="btnCustomers.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1067, -2</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 898</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="btnCustomers.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semilight, 10pt, style=Bold</value>
   </data>
-  <data name="btnCustomers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 225</value>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="btnCustomers.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>794, 12</value>
+  </data>
+  <data name="button2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 153</value>
   </data>
-  <data name="btnCustomers.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="btnCustomers.Text" xml:space="preserve">
-    <value>Customers</value>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Exit</value>
   </data>
-  <data name="&gt;&gt;btnCustomers.Name" xml:space="preserve">
-    <value>btnCustomers</value>
+  <data name="button2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
   </data>
-  <data name="&gt;&gt;btnCustomers.Type" xml:space="preserve">
+  <data name="button2.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnCustomers.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnCustomers.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt, style=Bold</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>663, 12</value>
+  </data>
+  <data name="button1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 153</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="button1.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnBusiness.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -246,17 +606,29 @@
   <data name="btnBusiness.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semilight, 10pt, style=Bold</value>
   </data>
+  <data name="btnBusiness.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btnBusiness.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 422</value>
+    <value>532, 14</value>
+  </data>
+  <data name="btnBusiness.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
   </data>
   <data name="btnBusiness.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 153</value>
   </data>
   <data name="btnBusiness.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="btnBusiness.Text" xml:space="preserve">
     <value>Business Details</value>
+  </data>
+  <data name="btnBusiness.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnBusiness.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
   </data>
   <data name="&gt;&gt;btnBusiness.Name" xml:space="preserve">
     <value>btnBusiness</value>
@@ -268,34 +640,178 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnBusiness.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
-  <data name="btnExit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
+  <data name="btnCustomers.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
-  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1370, 3</value>
+  <data name="btnCustomers.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt, style=Bold</value>
   </data>
-  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 44</value>
+  <data name="btnCustomers.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="btnCustomers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 14</value>
   </data>
-  <data name="btnExit.Text" xml:space="preserve">
-    <value>X</value>
+  <data name="btnCustomers.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
   </data>
-  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
-    <value>btnExit</value>
+  <data name="btnCustomers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 153</value>
   </data>
-  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
+  <data name="btnCustomers.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnCustomers.Text" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="btnCustomers.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnCustomers.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btnCustomers.Name" xml:space="preserve">
+    <value>btnCustomers</value>
+  </data>
+  <data name="&gt;&gt;btnCustomers.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnCustomers.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;btnCustomers.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnInvoice.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnInvoice.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt, style=Bold</value>
+  </data>
+  <data name="btnInvoice.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnInvoice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 14</value>
+  </data>
+  <data name="btnInvoice.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="btnInvoice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 153</value>
+  </data>
+  <data name="btnInvoice.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnInvoice.Text" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="btnInvoice.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnInvoice.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btnInvoice.Name" xml:space="preserve">
+    <value>btnInvoice</value>
+  </data>
+  <data name="&gt;&gt;btnInvoice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnInvoice.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnInvoice.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnPayments.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnPayments.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt, style=Bold</value>
+  </data>
+  <data name="btnPayments.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnPayments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 14</value>
+  </data>
+  <data name="btnPayments.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="btnPayments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 153</value>
+  </data>
+  <data name="btnPayments.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnPayments.Text" xml:space="preserve">
+    <value>Payments</value>
+  </data>
+  <data name="btnPayments.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnPayments.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btnPayments.Name" xml:space="preserve">
+    <value>btnPayments</value>
+  </data>
+  <data name="&gt;&gt;btnPayments.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPayments.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnPayments.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnStock.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btnStock.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semilight, 10pt, style=Bold</value>
+  </data>
+  <data name="btnStock.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnStock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 14</value>
+  </data>
+  <data name="btnStock.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 20, 20, 20</value>
+  </data>
+  <data name="btnStock.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="btnStock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 153</value>
+  </data>
+  <data name="btnStock.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnStock.Text" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="btnStock.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnStock.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btnStock.Name" xml:space="preserve">
+    <value>btnStock</value>
+  </data>
+  <data name="&gt;&gt;btnStock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnStock.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnStock.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -304,7 +820,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1418, 813</value>
+    <value>1418, 894</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

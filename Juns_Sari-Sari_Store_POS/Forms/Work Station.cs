@@ -17,12 +17,12 @@ namespace Juns_Sari_Sari_Store_POS
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnStock_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
 
-        private void btnStock_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -40,7 +40,9 @@ namespace Juns_Sari_Sari_Store_POS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Work_Station Work_Station = new Work_Station();
+            Work_Station.Show();
         }
 
         private void Loginpage_Load(object sender, EventArgs e)
