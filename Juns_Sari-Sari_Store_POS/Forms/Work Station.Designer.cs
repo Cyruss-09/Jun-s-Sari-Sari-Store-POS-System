@@ -218,7 +218,6 @@
             this.Controls.Add(this.btnStock);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Work_Station";
-            this.Opacity = 0.5D;
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.panel1.ResumeLayout(false);
             this.panelSales.ResumeLayout(false);

@@ -99,12 +99,14 @@ namespace Juns_Sari_Sari_Store_POS
             // 
             // textBoxUsername
             // 
+            this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.textBoxUsername, "textBoxUsername");
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBoxPassword
             // 
+            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.textBoxPassword, "textBoxPassword");
             this.textBoxPassword.Name = "textBoxPassword";
             // 
