@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Runtime.InteropServices;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Juns_Sari_Sari_Store_POS
 {
@@ -40,9 +41,11 @@ namespace Juns_Sari_Sari_Store_POS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             Work_Station Work_Station = new Work_Station();
+            Work_Station.StartPosition = FormStartPosition.CenterScreen;
             Work_Station.Show();
+            this.Hide();
         }
 
         private void Loginpage_Load(object sender, EventArgs e)

@@ -39,6 +39,7 @@ namespace Juns_Sari_Sari_Store_POS.Forms
         private void Stock_Load(object sender, EventArgs e)
         {
             btnAddItem.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAddItem.Width, btnAddItem.Height, 30, 30));
+            btnClear.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnClear.Width, btnClear.Height, 30, 30));
         }
     }
 }

@@ -143,6 +143,56 @@ namespace Juns_Sari_Sari_Store_POS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap favicon__5_ {
+            get {
+                object obj = ResourceManager.GetObject("favicon (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap favicon__6_ {
+            get {
+                object obj = ResourceManager.GetObject("favicon (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap favicon__7_ {
+            get {
+                object obj = ResourceManager.GetObject("favicon (7)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap favicon__8_ {
+            get {
+                object obj = ResourceManager.GetObject("favicon (8)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap favicon__9_ {
+            get {
+                object obj = ResourceManager.GetObject("favicon (9)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap grocery_store {
             get {
                 object obj = ResourceManager.GetObject("grocery-store", resourceCulture);
