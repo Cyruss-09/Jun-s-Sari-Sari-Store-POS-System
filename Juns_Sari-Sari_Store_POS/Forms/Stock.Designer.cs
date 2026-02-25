@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stockpage));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnAddItem = new System.Windows.Forms.Button();
             this.labelSupplier = new System.Windows.Forms.Label();
             this.comboBoxSupplier = new System.Windows.Forms.ComboBox();
             this.textBoxPurchasingOrder = new System.Windows.Forms.TextBox();
@@ -60,8 +62,6 @@
             this.btnPurchasingSummary = new System.Windows.Forms.Button();
             this.btnPrintStock = new System.Windows.Forms.Button();
             this.btnViewItem = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnAddItem = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -95,6 +95,40 @@
             this.panel1.Size = new System.Drawing.Size(376, 898);
             this.panel1.TabIndex = 11;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.Purple;
+            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__6_;
+            this.btnClear.Location = new System.Drawing.Point(227, 811);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(124, 50);
+            this.btnClear.TabIndex = 10;
+            this.btnClear.Text = "Clear";
+            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClear.UseVisualStyleBackColor = false;
+            // 
+            // btnAddItem
+            // 
+            this.btnAddItem.BackColor = System.Drawing.Color.Indigo;
+            this.btnAddItem.FlatAppearance.BorderSize = 0;
+            this.btnAddItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddItem.ForeColor = System.Drawing.Color.White;
+            this.btnAddItem.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__5_;
+            this.btnAddItem.Location = new System.Drawing.Point(17, 811);
+            this.btnAddItem.Name = "btnAddItem";
+            this.btnAddItem.Size = new System.Drawing.Size(193, 50);
+            this.btnAddItem.TabIndex = 9;
+            this.btnAddItem.Text = "Add Item";
+            this.btnAddItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddItem.UseVisualStyleBackColor = false;
             // 
             // labelSupplier
             // 
@@ -374,6 +408,7 @@
             this.btnPurchasingSummary.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPurchasingSummary.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnPurchasingSummary.UseVisualStyleBackColor = false;
+            this.btnPurchasingSummary.Click += new System.EventHandler(this.btnPurchasingSummary_Click);
             // 
             // btnPrintStock
             // 
@@ -404,40 +439,6 @@
             this.btnViewItem.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnViewItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnViewItem.UseVisualStyleBackColor = false;
-            // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.Purple;
-            this.btnClear.FlatAppearance.BorderSize = 0;
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__6_;
-            this.btnClear.Location = new System.Drawing.Point(227, 811);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(124, 50);
-            this.btnClear.TabIndex = 10;
-            this.btnClear.Text = "Clear";
-            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnClear.UseVisualStyleBackColor = false;
-            // 
-            // btnAddItem
-            // 
-            this.btnAddItem.BackColor = System.Drawing.Color.Indigo;
-            this.btnAddItem.FlatAppearance.BorderSize = 0;
-            this.btnAddItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddItem.ForeColor = System.Drawing.Color.White;
-            this.btnAddItem.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__5_;
-            this.btnAddItem.Location = new System.Drawing.Point(17, 811);
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(193, 50);
-            this.btnAddItem.TabIndex = 9;
-            this.btnAddItem.Text = "Add Item";
-            this.btnAddItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAddItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddItem.UseVisualStyleBackColor = false;
             // 
             // Stockpage
             // 

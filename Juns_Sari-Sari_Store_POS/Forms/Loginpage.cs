@@ -41,12 +41,26 @@ namespace Juns_Sari_Sari_Store_POS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
-            Work_Station Work_Station = new Work_Station();
-            Work_Station.StartPosition = FormStartPosition.CenterScreen;
-            Work_Station.Show();
-            this.Hide();
+            string user = textBoxUsername.Text;
+            string pass = textBoxPassword.Text;
+
+            //default
+
+            if (user == "Juns" && pass == "juns1234")
+            {
+                Work_Station Work_Station = new Work_Station();
+                Work_Station.StartPosition = FormStartPosition.CenterScreen;
+                Work_Station.Show();
+                this.Hide();
+
+            }
+            else
+            {
+                MessageBox.Show("Username or Password is incorrect...");
+            }
         }
+   
+
 
         private void Loginpage_Load(object sender, EventArgs e)
         {

@@ -41,5 +41,13 @@ namespace Juns_Sari_Sari_Store_POS.Forms
             btnAddItem.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAddItem.Width, btnAddItem.Height, 30, 30));
             btnClear.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnClear.Width, btnClear.Height, 30, 30));
         }
+
+        private void btnPurchasingSummary_Click(object sender, EventArgs e)
+        {
+            Purchasing_Summary purchasing_Summary = new Purchasing_Summary();
+            purchasing_Summary.StartPosition = FormStartPosition.CenterScreen;
+            purchasing_Summary.Show();
+            this.Hide();
+        }
     }
 }

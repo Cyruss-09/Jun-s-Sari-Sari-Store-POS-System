@@ -52,6 +52,18 @@
     <Compile Include="Forms\Loginpage.Designer.cs">
       <DependentUpon>Loginpage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Purchasing Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Purchasing Summary.Designer.cs">
+      <DependentUpon>Purchasing Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Stock View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Stock View.Designer.cs">
+      <DependentUpon>Stock View.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Stock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +80,12 @@
     </Compile>
     <EmbeddedResource Include="Forms\Loginpage.resx">
       <DependentUpon>Loginpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Purchasing Summary.resx">
+      <DependentUpon>Purchasing Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Stock View.resx">
+      <DependentUpon>Stock View.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>
