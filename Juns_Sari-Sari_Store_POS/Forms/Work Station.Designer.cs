@@ -147,6 +147,7 @@
             this.btnExit.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__3_1;
             this.btnExit.Name = "btnExit";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnRefresh
             // 

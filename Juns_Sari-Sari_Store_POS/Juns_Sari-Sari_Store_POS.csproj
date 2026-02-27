@@ -52,6 +52,12 @@
     <Compile Include="Forms\Loginpage.Designer.cs">
       <DependentUpon>Loginpage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Low Stock Value Reminder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Low Stock Value Reminder.Designer.cs">
+      <DependentUpon>Low Stock Value Reminder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Purchasing Summary.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\Loginpage.resx">
       <DependentUpon>Loginpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Low Stock Value Reminder.resx">
+      <DependentUpon>Low Stock Value Reminder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Purchasing Summary.resx">
       <DependentUpon>Purchasing Summary.cs</DependentUpon>

@@ -31,5 +31,10 @@ namespace Juns_Sari_Sari_Store_POS
         {
 
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+           Application.Exit();
+        }
     }
 }

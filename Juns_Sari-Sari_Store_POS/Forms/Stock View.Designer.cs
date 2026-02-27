@@ -188,9 +188,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(12, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 25);
+            this.label2.Size = new System.Drawing.Size(151, 25);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Stock Item Count:";
+            this.label2.Text = "Low Stock Item:";
             // 
             // Stock_View
             // 
@@ -203,7 +203,9 @@
             this.Controls.Add(this.panelStockItem);
             this.MinimumSize = new System.Drawing.Size(1418, 894);
             this.Name = "Stock_View";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stock_View";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.panelStockItem.ResumeLayout(false);
             this.panelStockItem.PerformLayout();
             this.panelPurchasingValue.ResumeLayout(false);

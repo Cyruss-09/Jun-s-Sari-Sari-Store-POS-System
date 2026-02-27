@@ -53,6 +53,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.removeItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fullScreenViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lowStockValueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelStockItem = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.labelStockCount = new System.Windows.Forms.Label();
@@ -62,6 +63,8 @@
             this.btnPurchasingSummary = new System.Windows.Forms.Button();
             this.btnPrintStock = new System.Windows.Forms.Button();
             this.btnViewItem = new System.Windows.Forms.Button();
+            this.viewLowStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -168,7 +171,7 @@
             this.labelPurchasingOrder.ForeColor = System.Drawing.Color.White;
             this.labelPurchasingOrder.Location = new System.Drawing.Point(17, 602);
             this.labelPurchasingOrder.Name = "labelPurchasingOrder";
-            this.labelPurchasingOrder.Size = new System.Drawing.Size(249, 47);
+            this.labelPurchasingOrder.Size = new System.Drawing.Size(268, 47);
             this.labelPurchasingOrder.TabIndex = 12;
             this.labelPurchasingOrder.Text = "Purchasing Order Number:";
             // 
@@ -180,6 +183,7 @@
             this.textBoxSellingPrice.Name = "textBoxSellingPrice";
             this.textBoxSellingPrice.Size = new System.Drawing.Size(334, 29);
             this.textBoxSellingPrice.TabIndex = 6;
+            this.textBoxSellingPrice.TextChanged += new System.EventHandler(this.textBoxSellingPrice_TextChanged);
             // 
             // labelSellingPrice
             // 
@@ -188,7 +192,7 @@
             this.labelSellingPrice.ForeColor = System.Drawing.Color.White;
             this.labelSellingPrice.Location = new System.Drawing.Point(17, 502);
             this.labelSellingPrice.Name = "labelSellingPrice";
-            this.labelSellingPrice.Size = new System.Drawing.Size(223, 47);
+            this.labelSellingPrice.Size = new System.Drawing.Size(268, 47);
             this.labelSellingPrice.TabIndex = 10;
             this.labelSellingPrice.Text = "MRP / Selling Price:";
             // 
@@ -198,8 +202,10 @@
             this.textBoxPurchaseValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPurchaseValue.Location = new System.Drawing.Point(17, 465);
             this.textBoxPurchaseValue.Name = "textBoxPurchaseValue";
+            this.textBoxPurchaseValue.ReadOnly = true;
             this.textBoxPurchaseValue.Size = new System.Drawing.Size(334, 29);
             this.textBoxPurchaseValue.TabIndex = 5;
+            this.textBoxPurchaseValue.TextChanged += new System.EventHandler(this.textBoxPurchaseValue_TextChanged);
             // 
             // labelPurchaseValue
             // 
@@ -208,7 +214,7 @@
             this.labelPurchaseValue.ForeColor = System.Drawing.Color.White;
             this.labelPurchaseValue.Location = new System.Drawing.Point(17, 415);
             this.labelPurchaseValue.Name = "labelPurchaseValue";
-            this.labelPurchaseValue.Size = new System.Drawing.Size(172, 47);
+            this.labelPurchaseValue.Size = new System.Drawing.Size(268, 47);
             this.labelPurchaseValue.TabIndex = 8;
             this.labelPurchaseValue.Text = "Purchase Value";
             // 
@@ -220,6 +226,7 @@
             this.textBoxPurchasingPrice.Name = "textBoxPurchasingPrice";
             this.textBoxPurchasingPrice.Size = new System.Drawing.Size(334, 29);
             this.textBoxPurchasingPrice.TabIndex = 4;
+            this.textBoxPurchasingPrice.TextChanged += new System.EventHandler(this.textBoxPurchasingPrice_TextChanged);
             // 
             // labelPurchasingPrice
             // 
@@ -228,7 +235,7 @@
             this.labelPurchasingPrice.ForeColor = System.Drawing.Color.White;
             this.labelPurchasingPrice.Location = new System.Drawing.Point(17, 319);
             this.labelPurchasingPrice.Name = "labelPurchasingPrice";
-            this.labelPurchasingPrice.Size = new System.Drawing.Size(172, 47);
+            this.labelPurchasingPrice.Size = new System.Drawing.Size(249, 47);
             this.labelPurchasingPrice.TabIndex = 6;
             this.labelPurchasingPrice.Text = "Purchasing Price:";
             // 
@@ -240,6 +247,7 @@
             this.textBoxPurchasingQuantity.Name = "textBoxPurchasingQuantity";
             this.textBoxPurchasingQuantity.Size = new System.Drawing.Size(334, 29);
             this.textBoxPurchasingQuantity.TabIndex = 3;
+            this.textBoxPurchasingQuantity.TextChanged += new System.EventHandler(this.textBoxPurchasingQuantity_TextChanged);
             // 
             // labelPurchasing
             // 
@@ -248,7 +256,7 @@
             this.labelPurchasing.ForeColor = System.Drawing.Color.White;
             this.labelPurchasing.Location = new System.Drawing.Point(17, 213);
             this.labelPurchasing.Name = "labelPurchasing";
-            this.labelPurchasing.Size = new System.Drawing.Size(204, 47);
+            this.labelPurchasing.Size = new System.Drawing.Size(249, 47);
             this.labelPurchasing.TabIndex = 4;
             this.labelPurchasing.Text = "Purchasing Quantity:";
             // 
@@ -300,11 +308,12 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.MediumBlue;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridView1.Location = new System.Drawing.Point(371, -16);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1052, 745);
+            this.dataGridView1.Size = new System.Drawing.Size(1120, 745);
             this.dataGridView1.TabIndex = 15;
             // 
             // contextMenuStrip1
@@ -312,21 +321,32 @@
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.removeItemToolStripMenuItem,
-            this.fullScreenViewToolStripMenuItem});
+            this.fullScreenViewToolStripMenuItem,
+            this.lowStockValueToolStripMenuItem,
+            this.viewLowStockToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(186, 52);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(254, 100);
             // 
             // removeItemToolStripMenuItem
             // 
             this.removeItemToolStripMenuItem.Name = "removeItemToolStripMenuItem";
-            this.removeItemToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
+            this.removeItemToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
             this.removeItemToolStripMenuItem.Text = "Remove Item";
+            this.removeItemToolStripMenuItem.Click += new System.EventHandler(this.removeItemToolStripMenuItem_Click);
             // 
             // fullScreenViewToolStripMenuItem
             // 
             this.fullScreenViewToolStripMenuItem.Name = "fullScreenViewToolStripMenuItem";
-            this.fullScreenViewToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
-            this.fullScreenViewToolStripMenuItem.Text = "Full Screen View";
+            this.fullScreenViewToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.fullScreenViewToolStripMenuItem.Text = "Stock Full Screen View";
+            this.fullScreenViewToolStripMenuItem.Click += new System.EventHandler(this.fullScreenViewToolStripMenuItem_Click);
+            // 
+            // lowStockValueToolStripMenuItem
+            // 
+            this.lowStockValueToolStripMenuItem.Name = "lowStockValueToolStripMenuItem";
+            this.lowStockValueToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.lowStockValueToolStripMenuItem.Text = "Low Stock Value Reminder";
+            this.lowStockValueToolStripMenuItem.Click += new System.EventHandler(this.lowStockValueToolStripMenuItem_Click);
             // 
             // panelStockItem
             // 
@@ -334,7 +354,7 @@
             this.panelStockItem.BackColor = System.Drawing.Color.Navy;
             this.panelStockItem.Controls.Add(this.label6);
             this.panelStockItem.Controls.Add(this.labelStockCount);
-            this.panelStockItem.Location = new System.Drawing.Point(910, 733);
+            this.panelStockItem.Location = new System.Drawing.Point(978, 733);
             this.panelStockItem.Name = "panelStockItem";
             this.panelStockItem.Size = new System.Drawing.Size(249, 149);
             this.panelStockItem.TabIndex = 16;
@@ -367,7 +387,7 @@
             this.panelPurchasingValue.BackColor = System.Drawing.Color.Navy;
             this.panelPurchasingValue.Controls.Add(this.label7);
             this.panelPurchasingValue.Controls.Add(this.labelPurchasingValue);
-            this.panelPurchasingValue.Location = new System.Drawing.Point(1165, 733);
+            this.panelPurchasingValue.Location = new System.Drawing.Point(1233, 733);
             this.panelPurchasingValue.Name = "panelPurchasingValue";
             this.panelPurchasingValue.Size = new System.Drawing.Size(249, 149);
             this.panelPurchasingValue.TabIndex = 17;
@@ -400,7 +420,7 @@
             this.btnPurchasingSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchasingSummary.ForeColor = System.Drawing.Color.Black;
             this.btnPurchasingSummary.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__9_;
-            this.btnPurchasingSummary.Location = new System.Drawing.Point(657, 733);
+            this.btnPurchasingSummary.Location = new System.Drawing.Point(675, 733);
             this.btnPurchasingSummary.Name = "btnPurchasingSummary";
             this.btnPurchasingSummary.Size = new System.Drawing.Size(146, 149);
             this.btnPurchasingSummary.TabIndex = 14;
@@ -416,9 +436,9 @@
             this.btnPrintStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrintStock.ForeColor = System.Drawing.Color.Black;
             this.btnPrintStock.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__7_;
-            this.btnPrintStock.Location = new System.Drawing.Point(518, 733);
+            this.btnPrintStock.Location = new System.Drawing.Point(527, 733);
             this.btnPrintStock.Name = "btnPrintStock";
-            this.btnPrintStock.Size = new System.Drawing.Size(133, 149);
+            this.btnPrintStock.Size = new System.Drawing.Size(146, 149);
             this.btnPrintStock.TabIndex = 13;
             this.btnPrintStock.Text = "Print Stock Balance";
             this.btnPrintStock.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -433,19 +453,45 @@
             this.btnViewItem.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__8_;
             this.btnViewItem.Location = new System.Drawing.Point(379, 733);
             this.btnViewItem.Name = "btnViewItem";
-            this.btnViewItem.Size = new System.Drawing.Size(133, 149);
+            this.btnViewItem.Size = new System.Drawing.Size(146, 149);
             this.btnViewItem.TabIndex = 12;
             this.btnViewItem.Text = "View All Item";
             this.btnViewItem.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnViewItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnViewItem.UseVisualStyleBackColor = false;
             // 
+            // viewLowStockToolStripMenuItem
+            // 
+            this.viewLowStockToolStripMenuItem.Name = "viewLowStockToolStripMenuItem";
+            this.viewLowStockToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.viewLowStockToolStripMenuItem.Text = "View Low Stock";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExit.BackColor = System.Drawing.Color.Silver;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI Semilight", 10F, System.Drawing.FontStyle.Bold);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = global::Juns_Sari_Sari_Store_POS.Properties.Resources.favicon__3_1;
+            this.btnExit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnExit.Location = new System.Drawing.Point(823, 733);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(10);
+            this.btnExit.Size = new System.Drawing.Size(146, 149);
+            this.btnExit.TabIndex = 18;
+            this.btnExit.Text = "Exit";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Stockpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1418, 894);
+            this.ClientSize = new System.Drawing.Size(1486, 894);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPurchasingSummary);
             this.Controls.Add(this.panelPurchasingValue);
             this.Controls.Add(this.panelStockItem);
@@ -506,5 +552,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label labelPurchasingValue;
         private System.Windows.Forms.Button btnPurchasingSummary;
+        private System.Windows.Forms.ToolStripMenuItem lowStockValueToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewLowStockToolStripMenuItem;
+        private System.Windows.Forms.Button btnExit;
     }
 }

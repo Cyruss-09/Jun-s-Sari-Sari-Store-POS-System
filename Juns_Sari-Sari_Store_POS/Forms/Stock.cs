@@ -49,5 +49,119 @@ namespace Juns_Sari_Sari_Store_POS.Forms
             purchasing_Summary.Show();
             this.Hide();
         }
+
+        private void fullScreenViewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Stock_View stock_View = new Stock_View();
+            stock_View.Show();
+        }
+
+        private void removeItemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lowStockValueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Low_Stock_Reminder low_Stock_Reminder = new Low_Stock_Reminder();
+            low_Stock_Reminder.Show();
+        }
+
+        private void textBoxPurchasingQuantity_TextChanged(object sender, EventArgs e)
+        {   
+            // this code will allow textbox to accept numbers only
+            if(string.IsNullOrEmpty(textBoxPurchasingQuantity.Text))
+            {
+                textBoxPurchasingQuantity.Text = "";
+                textBoxPurchasingPrice.Text = "";
+            }
+            else
+            {
+                float qty;
+                if(float.TryParse(textBoxPurchasingQuantity.Text,out qty))
+                {
+
+                }else
+                {
+                    textBoxPurchasingQuantity.Text = "";
+                    textBoxPurchasingPrice.Text = "";
+                }
+            }
+        }
+
+        private void textBoxPurchasingPrice_TextChanged(object sender, EventArgs e)
+        {   
+            
+            if (string.IsNullOrEmpty(textBoxPurchasingPrice.Text))
+            {
+                textBoxPurchasingPrice.Text = "";
+                textBoxPurchaseValue.Text = "";
+
+            }
+            else
+            {
+                float PurchasingPrice;
+                if (float.TryParse(textBoxPurchasingPrice.Text, out PurchasingPrice))
+                {
+                    double Purchasing_Value = Convert.ToDouble(textBoxPurchasingQuantity.Text) * Convert.ToDouble(textBoxPurchasingPrice.Text);
+
+
+                    textBoxPurchaseValue.Text = Convert.ToString(Purchasing_Value);
+                }
+                else
+                {
+                    textBoxPurchasingPrice.Text = "";
+                    textBoxPurchaseValue.Text = "";
+                }
+            }
+        }
+
+        private void textBoxSellingPrice_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBoxSellingPrice.Text))
+            {
+                textBoxSellingPrice.Text = "";
+            }
+            else
+            {
+                float qty;
+                if (float.TryParse(textBoxSellingPrice.Text, out qty))
+                {
+
+                }
+                else
+                {
+                    textBoxSellingPrice.Text = "";
+                }
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Work_Station work_Station = new Work_Station();
+            work_Station.Show();
+            this.Show();
+            this.Hide();
+        }
+
+        private void textBoxPurchaseValue_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBoxPurchaseValue.Text))
+            {
+                textBoxPurchaseValue.Text = "";
+            }
+            else
+            {
+                float PurchaseValue;
+                if (float.TryParse(textBoxPurchaseValue.Text, out PurchaseValue))
+                {
+
+                }
+                else
+                {
+                    textBoxPurchaseValue.Text = "";
+                }
+            }
+        }
     }
 }

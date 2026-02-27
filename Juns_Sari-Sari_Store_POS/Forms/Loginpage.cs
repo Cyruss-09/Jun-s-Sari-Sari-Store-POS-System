@@ -9,11 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Data.OleDb;
 
 namespace Juns_Sari_Sari_Store_POS
 {
     public partial class Loginpage : Form
     {
+        OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Juns POS System1.accdb");
 
         [DllImport("gdi32.dll", SetLastError = true)]
         private static extern IntPtr CreateRoundRectRgn(
@@ -41,25 +43,45 @@ namespace Juns_Sari_Sari_Store_POS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string user = textBoxUsername.Text;
-            string pass = textBoxPassword.Text;
-
-            //default
-
-            if (user == "Juns" && pass == "juns1234")
+            try
             {
-                Work_Station Work_Station = new Work_Station();
-                Work_Station.StartPosition = FormStartPosition.CenterScreen;
-                Work_Station.Show();
-                this.Hide();
+                con.Open();
 
+                string query = "SELECT Username FROM UserDetails WHERE Username = ?";
+
+                using (OleDbCommand cmd = new OleDbCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("?", textBoxUsername.Text);
+
+                    using (OleDbDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            MessageBox.Show("Success", "Pass", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            // Open Work_Station form
+                            Work_Station workStation = new Work_Station();
+                            workStation.StartPosition = FormStartPosition.CenterScreen;
+                            workStation.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Username is not available", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Username or Password is incorrect...");
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
             }
         }
-   
+
 
 
         private void Loginpage_Load(object sender, EventArgs e)
