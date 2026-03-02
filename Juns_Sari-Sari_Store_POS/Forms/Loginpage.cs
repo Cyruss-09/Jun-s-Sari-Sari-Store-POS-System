@@ -8,14 +8,13 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Data.OleDb;
+using System.Data.SqlClient;
 
 namespace Juns_Sari_Sari_Store_POS
 {
     public partial class Loginpage : Form
     {
-        OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Juns POS System1.accdb");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Documents\Juns.db.mdf;Integrated Security=True;Connect Timeout=30");
 
         [DllImport("gdi32.dll", SetLastError = true)]
         private static extern IntPtr CreateRoundRectRgn(
@@ -43,43 +42,8 @@ namespace Juns_Sari_Sari_Store_POS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            try
-            {
-                con.Open();
-
-                string query = "SELECT Username FROM UserDetails WHERE Username = ?";
-
-                using (OleDbCommand cmd = new OleDbCommand(query, con))
-                {
-                    cmd.Parameters.AddWithValue("?", textBoxUsername.Text);
-
-                    using (OleDbDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            MessageBox.Show("Success", "Pass", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                            // Open Work_Station form
-                            Work_Station workStation = new Work_Station();
-                            workStation.StartPosition = FormStartPosition.CenterScreen;
-                            workStation.Show();
-                            this.Hide();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Username is not available", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            finally
-            {
-                con.Close();
-            }
+            con.Open();
+            SqlCommand Login_Username_Check = new SqlCommand("select Username from UserDetails where Username = '"+ textBoxUsername + "'");
         }
 
 
