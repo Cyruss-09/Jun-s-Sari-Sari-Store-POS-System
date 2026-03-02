@@ -1,14 +1,15 @@
-﻿using System;
+﻿using Juns_Sari_Sari_Store_POS.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace Juns_Sari_Sari_Store_POS
 {
@@ -42,8 +43,48 @@ namespace Juns_Sari_Sari_Store_POS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand Login_Username_Check = new SqlCommand("select Username from UserDetails where Username = '"+ textBoxUsername + "'");
+            string user = textBoxUsername.Text.Trim();
+            string pass = textBoxPassword.Text;
+
+            const string existsSql = "SELECT COUNT(1) FROM UserDetails WHERE Username = @user";
+            const string authSql   = "SELECT COUNT(1) FROM UserDetails WHERE Username = @user AND Password = @pass";
+
+            try
+            {
+                con.Open();
+
+                using (var cmd = new SqlCommand(existsSql, con))
+                {
+                    cmd.Parameters.AddWithValue("@user", user);
+                    bool userExists = Convert.ToInt32(cmd.ExecuteScalar()) > 0;
+                    if (!userExists)
+                    {
+                        MessageBox.Show("Username not available", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+
+                using (var cmd = new SqlCommand(authSql, con))
+                {
+                    cmd.Parameters.AddWithValue("@user", user);
+                    cmd.Parameters.AddWithValue("@pass", pass);
+                    bool authenticated = Convert.ToInt32(cmd.ExecuteScalar()) > 0;
+                    if (authenticated)
+                    {
+                        var ws = new Work_Station { StartPosition = FormStartPosition.CenterScreen };
+                        ws.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open) con.Close();
+            }
         }
 
 
