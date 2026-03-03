@@ -466,6 +466,7 @@
             this.btnViewItem.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnViewItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnViewItem.UseVisualStyleBackColor = false;
+            this.btnViewItem.Click += new System.EventHandler(this.btnViewItem_Click);
             // 
             // btnExit
             // 

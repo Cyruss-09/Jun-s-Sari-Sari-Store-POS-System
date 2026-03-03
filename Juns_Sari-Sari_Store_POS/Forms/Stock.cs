@@ -208,6 +208,50 @@ namespace Juns_Sari_Sari_Store_POS.Forms
                         textBoxPurchasingQuantity.Focus();
                         this.ActiveControl = textBoxPurchasingQuantity;
                     }
+                    else
+                    {
+                        if (string.IsNullOrEmpty(textBoxPurchasingPrice.Text))
+                        {
+                            MessageBox.Show("Purchasing Price can't be null", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            textBoxPurchasingPrice.Focus();
+                            this.ActiveControl = textBoxPurchasingPrice;
+                        }else
+                        {
+                            if (string.IsNullOrEmpty(textBoxSellingPrice.Text))
+                            {
+                                MessageBox.Show("Purchasing Selling Price can't be null", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                textBoxSellingPrice.Focus();
+                                this.ActiveControl = textBoxSellingPrice;
+                            }else
+                            {
+                                if (string.IsNullOrEmpty(textBoxPurchasingOrder.Text))
+                                {
+                                    MessageBox.Show("Purchasing Order can't be null", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    textBoxPurchasingOrder.Focus();
+                                    this.ActiveControl = textBoxPurchasingOrder;
+                                }else
+                                {
+                                    if (string.IsNullOrEmpty(comboBoxSupplier.Text))
+                                    {
+                                        MessageBox.Show("Supplier can't be null", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                        comboBoxSupplier.Focus();
+                                        this.ActiveControl = comboBoxSupplier;
+                                    }else
+                                    {
+                                        textBoxItem.Clear();
+                                        textBoxDescription.Clear();
+                                        textBoxPurchasingQuantity.Clear();
+                                        textBoxPurchasingPrice.Clear();
+                                        textBoxPurchaseValue.Clear();
+                                        textBoxSellingPrice.Clear();
+                                        textBoxPurchasingOrder.Clear();
+                                        comboBoxSupplier.SelectedIndex = -1; // clears selection but preserves items
+                                        textBoxItem.Focus();
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -241,7 +285,7 @@ namespace Juns_Sari_Sari_Store_POS.Forms
                     }
 
                     int rows = cmd.ExecuteNonQuery();
-                    // Clear only when insert succeeded
+                    
                     if (rows > 0)
                     {
                         ClearInputFields();
@@ -257,6 +301,18 @@ namespace Juns_Sari_Sari_Store_POS.Forms
                     if (con.State == ConnectionState.Open) con.Close();
                 }
             }
+        }
+
+        private void btnViewItem_Click(object sender, EventArgs e)
+        {
+            con.Open();
+
+            SqlCommand ViewAllItems = new SqlCommand("select * from [Stock]", con);
+            ViewAllItems.ExecuteNonQuery();
+            SqlDataAdapter ItemAdapter = new SqlDataAdapter(ViewAllItems);
+            DataTable StockTable = new DataTable();
+            ItemAdapter.Fill(StockTable);
+
         }
     }
 }
