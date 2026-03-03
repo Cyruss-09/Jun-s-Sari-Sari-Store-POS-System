@@ -54,6 +54,7 @@
             this.removeItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fullScreenViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lowStockValueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewLowStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelStockItem = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.labelStockCount = new System.Windows.Forms.Label();
@@ -63,7 +64,6 @@
             this.btnPurchasingSummary = new System.Windows.Forms.Button();
             this.btnPrintStock = new System.Windows.Forms.Button();
             this.btnViewItem = new System.Windows.Forms.Button();
-            this.viewLowStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -132,6 +132,7 @@
             this.btnAddItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddItem.UseVisualStyleBackColor = false;
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // labelSupplier
             // 
@@ -348,6 +349,12 @@
             this.lowStockValueToolStripMenuItem.Text = "Low Stock Value Reminder";
             this.lowStockValueToolStripMenuItem.Click += new System.EventHandler(this.lowStockValueToolStripMenuItem_Click);
             // 
+            // viewLowStockToolStripMenuItem
+            // 
+            this.viewLowStockToolStripMenuItem.Name = "viewLowStockToolStripMenuItem";
+            this.viewLowStockToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
+            this.viewLowStockToolStripMenuItem.Text = "View Low Stock";
+            // 
             // panelStockItem
             // 
             this.panelStockItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -459,12 +466,6 @@
             this.btnViewItem.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnViewItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnViewItem.UseVisualStyleBackColor = false;
-            // 
-            // viewLowStockToolStripMenuItem
-            // 
-            this.viewLowStockToolStripMenuItem.Name = "viewLowStockToolStripMenuItem";
-            this.viewLowStockToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
-            this.viewLowStockToolStripMenuItem.Text = "View Low Stock";
             // 
             // btnExit
             // 

@@ -60,6 +60,7 @@ namespace Juns_Sari_Sari_Store_POS
                     if (!userExists)
                     {
                         MessageBox.Show("Username not available", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        ClearCredentials();
                         return;
                     }
                 }
@@ -78,6 +79,7 @@ namespace Juns_Sari_Sari_Store_POS
                     else
                     {
                         MessageBox.Show("Incorrect password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        ClearCredentials();
                     }
                 }
             }
@@ -87,7 +89,13 @@ namespace Juns_Sari_Sari_Store_POS
             }
         }
 
-
+        // Clears credential fields and restores input focus.
+        private void ClearCredentials()
+        {
+            textBoxUsername.Clear();
+            textBoxPassword.Clear();
+            textBoxUsername.Focus();
+        }
 
         private void Loginpage_Load(object sender, EventArgs e)
         {

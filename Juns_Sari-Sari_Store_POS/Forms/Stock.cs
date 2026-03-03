@@ -8,11 +8,16 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace Juns_Sari_Sari_Store_POS.Forms
 {
+    
     public partial class Stockpage : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Documents\Juns.db.mdf;Integrated Security=True;Connect Timeout=30");
+
         [DllImport("gdi32.dll", SetLastError = true)]
         private static extern IntPtr CreateRoundRectRgn(
            int nLeftRect,
@@ -160,6 +165,96 @@ namespace Juns_Sari_Sari_Store_POS.Forms
                 else
                 {
                     textBoxPurchaseValue.Text = "";
+                }
+            }
+        }
+
+        // Helper to clear all input controls after successful insert
+        private void ClearInputFields()
+        {
+            textBoxItem.Clear();
+            textBoxDescription.Clear();
+            textBoxPurchasingQuantity.Clear();
+            textBoxPurchasingPrice.Clear();
+            textBoxPurchaseValue.Clear();
+            textBoxSellingPrice.Clear();
+            textBoxPurchasingOrder.Clear();
+            comboBoxSupplier.SelectedIndex = -1; // clears selection but preserves items
+            textBoxItem.Focus();
+        }
+
+        private void btnAddItem_Click(object sender, EventArgs e)
+        {   
+             
+            if(string.IsNullOrEmpty(textBoxItem.Text))
+            {
+                MessageBox.Show("Item Code can't be null", "Error", MessageBoxButtons. OK, MessageBoxIcon.Error);
+                textBoxItem.Focus();
+                this.ActiveControl = textBoxItem;
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(textBoxDescription.Text))
+                {
+                    MessageBox.Show("Description can't be null", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBoxDescription.Focus();
+                    this.ActiveControl = textBoxDescription;
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(textBoxPurchasingQuantity.Text))
+                    {
+                        MessageBox.Show("Purchasing Quantity can't be null", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        textBoxPurchasingQuantity.Focus();
+                        this.ActiveControl = textBoxPurchasingQuantity;
+                    }
+                }
+            }
+
+            const string sql = @"INSERT INTO dbo.Stock([ItemCode],[Description],[Prch_Qty],[Prch_Price],[Prch_Value],[MRP],[Supplier])
+                     VALUES (@code,@desc,@qty,@price,@value,@mrp,@supplier)";
+
+            using (var cmd = new SqlCommand(sql, con))
+            {
+                cmd.Parameters.AddWithValue("@code", textBoxItem.Text.Trim());
+                cmd.Parameters.AddWithValue("@desc", textBoxDescription.Text.Trim());
+                cmd.Parameters.AddWithValue("@qty", double.TryParse(textBoxPurchasingQuantity.Text, out var qty) ? qty : 0.0);
+                cmd.Parameters.AddWithValue("@price", double.TryParse(textBoxPurchasingPrice.Text, out var price) ? price : 0.0);
+                cmd.Parameters.AddWithValue("@value", double.TryParse(textBoxPurchaseValue.Text, out var value) ? value : 0.0);
+                cmd.Parameters.AddWithValue("@mrp", double.TryParse(textBoxSellingPrice.Text, out var mrp) ? mrp : 0.0);
+                cmd.Parameters.AddWithValue("@supplier", comboBoxSupplier.Text.Trim());
+
+                try
+                {
+                    if (con.State != ConnectionState.Open) con.Open();
+
+                    // Optional debug/info log
+                    using (var check = new SqlCommand("SELECT DB_NAME(), USER_NAME(), OBJECT_ID('dbo.Stock')", con))
+                    {
+                        using (var rdr = check.ExecuteReader())
+                        {
+                            if (rdr.Read())
+                            {
+                                Debug.WriteLine($"DB={rdr.GetValue(0)}, USER={rdr.GetValue(1)}, OBJECT_ID(dbo.Stock)={rdr.GetValue(2)}");
+                            }
+                        }
+                    }
+
+                    int rows = cmd.ExecuteNonQuery();
+                    // Clear only when insert succeeded
+                    if (rows > 0)
+                    {
+                        ClearInputFields();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Insert failed: {ex.Message}");
+                    MessageBox.Show("Failed to add item. See debug output for details.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    if (con.State == ConnectionState.Open) con.Close();
                 }
             }
         }
