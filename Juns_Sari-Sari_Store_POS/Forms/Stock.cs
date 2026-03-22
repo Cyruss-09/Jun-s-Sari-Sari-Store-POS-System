@@ -245,7 +245,7 @@ namespace Juns_Sari_Sari_Store_POS.Forms
                                         textBoxPurchaseValue.Clear();
                                         textBoxSellingPrice.Clear();
                                         textBoxPurchasingOrder.Clear();
-                                        comboBoxSupplier.SelectedIndex = -1; // clears selection but preserves items
+                                        comboBoxSupplier.SelectedIndex = -1;
                                         textBoxItem.Focus();
                                     }
                                 }
@@ -272,7 +272,6 @@ namespace Juns_Sari_Sari_Store_POS.Forms
                 {
                     if (con.State != ConnectionState.Open) con.Open();
 
-                    // Optional debug/info log
                     using (var check = new SqlCommand("SELECT DB_NAME(), USER_NAME(), OBJECT_ID('dbo.Stock')", con))
                     {
                         using (var rdr = check.ExecuteReader())
@@ -312,6 +311,13 @@ namespace Juns_Sari_Sari_Store_POS.Forms
             SqlDataAdapter ItemAdapter = new SqlDataAdapter(ViewAllItems);
             DataTable StockTable = new DataTable();
             ItemAdapter.Fill(StockTable);
+            dataGridView1.DataSource = StockTable;
+
+            con.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
