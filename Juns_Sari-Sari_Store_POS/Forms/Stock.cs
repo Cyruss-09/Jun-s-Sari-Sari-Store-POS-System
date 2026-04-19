@@ -43,9 +43,22 @@ namespace Juns_Sari_Sari_Store_POS.Forms
 
         private void Stock_Load(object sender, EventArgs e)
         {
+            Stockopen();
+
             btnAddItem.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAddItem.Width, btnAddItem.Height, 30, 30));
             btnClear.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnClear.Width, btnClear.Height, 30, 30));
         }
+
+        private void Stockopen()
+        {
+            con.Open();
+            SqlCommand CountItem = new SqlCommand("Select Count(ItemCode) from Stock", con);
+            string ItemCount = CountItem.ExecuteScalar().ToString();
+            con.Close();
+
+            lblStockcount.Text = ItemCount;
+        }
+
 
         private void btnPurchasingSummary_Click(object sender, EventArgs e)
         {

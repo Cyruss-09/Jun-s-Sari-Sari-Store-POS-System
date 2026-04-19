@@ -57,10 +57,10 @@
             this.lowStockValueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewLowStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelStockItem = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblStockcount = new System.Windows.Forms.Label();
             this.labelStockCount = new System.Windows.Forms.Label();
             this.panelPurchasingValue = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblStockvalue = new System.Windows.Forms.Label();
             this.labelPurchasingValue = new System.Windows.Forms.Label();
             this.btnPurchasingSummary = new System.Windows.Forms.Button();
             this.btnPrintStock = new System.Windows.Forms.Button();
@@ -373,23 +373,23 @@
             // 
             this.panelStockItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panelStockItem.BackColor = System.Drawing.Color.Navy;
-            this.panelStockItem.Controls.Add(this.label6);
+            this.panelStockItem.Controls.Add(this.lblStockcount);
             this.panelStockItem.Controls.Add(this.labelStockCount);
             this.panelStockItem.Location = new System.Drawing.Point(978, 733);
             this.panelStockItem.Name = "panelStockItem";
             this.panelStockItem.Size = new System.Drawing.Size(249, 149);
             this.panelStockItem.TabIndex = 16;
             // 
-            // label6
+            // lblStockcount
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 90);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 29);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "00";
+            this.lblStockcount.AutoSize = true;
+            this.lblStockcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStockcount.ForeColor = System.Drawing.Color.White;
+            this.lblStockcount.Location = new System.Drawing.Point(12, 90);
+            this.lblStockcount.Name = "lblStockcount";
+            this.lblStockcount.Size = new System.Drawing.Size(41, 29);
+            this.lblStockcount.TabIndex = 1;
+            this.lblStockcount.Text = "00";
             // 
             // labelStockCount
             // 
@@ -406,23 +406,23 @@
             // 
             this.panelPurchasingValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panelPurchasingValue.BackColor = System.Drawing.Color.Navy;
-            this.panelPurchasingValue.Controls.Add(this.label7);
+            this.panelPurchasingValue.Controls.Add(this.lblStockvalue);
             this.panelPurchasingValue.Controls.Add(this.labelPurchasingValue);
             this.panelPurchasingValue.Location = new System.Drawing.Point(1233, 733);
             this.panelPurchasingValue.Name = "panelPurchasingValue";
             this.panelPurchasingValue.Size = new System.Drawing.Size(249, 149);
             this.panelPurchasingValue.TabIndex = 17;
             // 
-            // label7
+            // lblStockvalue
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(12, 90);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 29);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "₱0.00";
+            this.lblStockvalue.AutoSize = true;
+            this.lblStockvalue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStockvalue.ForeColor = System.Drawing.Color.White;
+            this.lblStockvalue.Location = new System.Drawing.Point(12, 90);
+            this.lblStockvalue.Name = "lblStockvalue";
+            this.lblStockvalue.Size = new System.Drawing.Size(79, 29);
+            this.lblStockvalue.TabIndex = 1;
+            this.lblStockvalue.Text = "₱0.00";
             // 
             // labelPurchasingValue
             // 
@@ -431,9 +431,9 @@
             this.labelPurchasingValue.ForeColor = System.Drawing.Color.White;
             this.labelPurchasingValue.Location = new System.Drawing.Point(12, 21);
             this.labelPurchasingValue.Name = "labelPurchasingValue";
-            this.labelPurchasingValue.Size = new System.Drawing.Size(172, 25);
+            this.labelPurchasingValue.Size = new System.Drawing.Size(124, 25);
             this.labelPurchasingValue.TabIndex = 0;
-            this.labelPurchasingValue.Text = "Purchasing Value:";
+            this.labelPurchasingValue.Text = "Stock Value:";
             // 
             // btnPurchasingSummary
             // 
@@ -563,9 +563,9 @@
         private System.Windows.Forms.ToolStripMenuItem fullScreenViewToolStripMenuItem;
         private System.Windows.Forms.Panel panelStockItem;
         private System.Windows.Forms.Label labelStockCount;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblStockcount;
         private System.Windows.Forms.Panel panelPurchasingValue;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblStockvalue;
         private System.Windows.Forms.Label labelPurchasingValue;
         private System.Windows.Forms.Button btnPurchasingSummary;
         private System.Windows.Forms.ToolStripMenuItem lowStockValueToolStripMenuItem;

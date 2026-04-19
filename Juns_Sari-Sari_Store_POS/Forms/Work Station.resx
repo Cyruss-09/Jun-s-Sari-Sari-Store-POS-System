@@ -516,6 +516,9 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="btnExit.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnExit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -526,13 +529,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>794, 12</value>
+    <value>833, 12</value>
   </data>
   <data name="btnExit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 10, 10</value>
   </data>
   <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 153</value>
+    <value>138, 153</value>
   </data>
   <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -558,6 +561,9 @@
   <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="btnRefresh.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnRefresh.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -568,13 +574,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>663, 12</value>
+    <value>695, 12</value>
   </data>
   <data name="btnRefresh.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 10, 10</value>
   </data>
   <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 153</value>
+    <value>138, 153</value>
   </data>
   <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -600,6 +606,9 @@
   <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="btnBusiness.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnBusiness.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -610,13 +619,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnBusiness.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 14</value>
+    <value>557, 14</value>
   </data>
   <data name="btnBusiness.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 10, 10</value>
   </data>
   <data name="btnBusiness.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 153</value>
+    <value>138, 153</value>
   </data>
   <data name="btnBusiness.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -642,6 +651,9 @@
   <data name="&gt;&gt;btnBusiness.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <metadata name="btnCustomers.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnCustomers.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -652,13 +664,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnCustomers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 14</value>
+    <value>281, 14</value>
   </data>
   <data name="btnCustomers.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 10, 10</value>
   </data>
   <data name="btnCustomers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 153</value>
+    <value>138, 153</value>
   </data>
   <data name="btnCustomers.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -684,6 +696,9 @@
   <data name="&gt;&gt;btnCustomers.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <metadata name="btnInvoice.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnInvoice.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -694,13 +709,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnInvoice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 14</value>
+    <value>143, 14</value>
   </data>
   <data name="btnInvoice.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 10, 10</value>
   </data>
   <data name="btnInvoice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 153</value>
+    <value>138, 153</value>
   </data>
   <data name="btnInvoice.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -726,6 +741,9 @@
   <data name="&gt;&gt;btnInvoice.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <metadata name="btnPayments.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnPayments.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -736,13 +754,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnPayments.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 14</value>
+    <value>419, 14</value>
   </data>
   <data name="btnPayments.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 10, 10</value>
   </data>
   <data name="btnPayments.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 153</value>
+    <value>138, 153</value>
   </data>
   <data name="btnPayments.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -768,6 +786,9 @@
   <data name="&gt;&gt;btnPayments.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <metadata name="btnStock.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnStock.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -787,7 +808,7 @@
     <value>10, 10, 10, 10</value>
   </data>
   <data name="btnStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 153</value>
+    <value>138, 153</value>
   </data>
   <data name="btnStock.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
