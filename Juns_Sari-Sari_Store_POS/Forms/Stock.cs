@@ -54,9 +54,14 @@ namespace Juns_Sari_Sari_Store_POS.Forms
             con.Open();
             SqlCommand CountItem = new SqlCommand("Select Count(ItemCode) from Stock", con);
             string ItemCount = CountItem.ExecuteScalar().ToString();
+           
+            
+            SqlCommand SumStockValue = new SqlCommand("Select Sum(Prch_Value) from Stock", con);
+            string StockValue = SumStockValue.ExecuteScalar().ToString();
             con.Close();
 
             lblStockcount.Text = ItemCount;
+            lblStockvalue.Text = "Rs." + StockValue;
         }
 
 
@@ -251,6 +256,8 @@ namespace Juns_Sari_Sari_Store_POS.Forms
                                         this.ActiveControl = comboBoxSupplier;
                                     }else
                                     {
+                                        Stockopen();
+
                                         textBoxItem.Clear();
                                         textBoxDescription.Clear();
                                         textBoxPurchasingQuantity.Clear();
